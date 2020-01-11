@@ -1,0 +1,40 @@
+body { background: url("./img/fone.png") 50% 0% no-repeat; max-width: 1920px; width: 100%; margin: 0 auto; position: relative; }
+
+.soviet { max-width: 1080px; width: 100%; height: auto; margin: 145px auto 124px; position: relative; }
+.soviet > img { width: 100%; height: auto; }
+
+.bigshell { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(4px); position: relative; z-index: 1; box-shadow: 0 0 25px white; margin: 0 auto 425px; }
+.bigshell .in { padding-top: 48px; padding-bottom: 48px; max-width: 1633px; width: 100%; margin: 0px auto 0px; position: relative; z-index: 5; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
+.bigshell .in .text-shell1, .bigshell .in .text-shell2 { max-width: 607px; width: 100%; text-align: center; padding-top: 49px; }
+.bigshell .in .text-shell1 h2, .bigshell .in .text-shell2 h2 { font-family: Forum; font-style: normal; font-weight: normal; font-size: 72px; line-height: 79px; color: #000; margin-top: 0; margin-bottom: 40px; }
+.bigshell .in .text-shell1 p, .bigshell .in .text-shell2 p { font-family: Forum; font-style: normal; font-weight: normal; font-size: 34px; line-height: 38px; color: #000; }
+.bigshell .in .text-shell1 { padding-left: 0px; padding-right: 0px; -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; }
+.bigshell .in .text-shell1 p { padding-right: 0px; }
+.bigshell .in .text-shell1 .btnshell1 { max-width: 508px; width: 100%; margin: 20px auto; text-align: center; }
+.bigshell .in .text-shell1 .btnshell1 .btn1 { width: 221px; background: url("./img/discord.png") 0 0 no-repeat; height: 60px; margin-right: 31px; display: inline-block; cursor: pointer; }
+.bigshell .in .text-shell1 .btnshell1 .btn2 { width: 221px; background: url("./img/nastupit.png") 0 0 no-repeat; height: 60px; margin-left: 31px; display: inline-block; cursor: pointer; }
+.bigshell .in .text-shell2 { padding-left: 0px; padding-right: 20px; -webkit-box-ordinal-group: 4; -webkit-order: 3; -ms-flex-order: 3; order: 3; }
+.bigshell .in .text-shell2 p { padding-left: 0px; padding-right: 20px; min-height: 152px; }
+.bigshell .in .text-shell2 .btnshell2 { max-width: 607px; width: 100%; margin: 20px auto; text-align: center; }
+.bigshell .in .text-shell2 .btnshell2 .btn3 { width: 180px; background: url("./img/raider.png") 50% 50% no-repeat; height: 60px; margin-right: 14px; display: inline-block; cursor: pointer; border-radius: 12px; }
+.bigshell .in .text-shell2 .btnshell2 .btn4 { width: 170px; background: url("./img/wowprog.png") 50% 50% no-repeat; height: 60px; margin-right: 13px; display: inline-block; cursor: pointer; border-radius: 12px; }
+.bigshell .in .text-shell2 .btnshell2 .btn5 { width: 221px; background: url("./img/wowlogs.png") 0 0 no-repeat; height: 60px; margin-left: 1px; display: inline-block; cursor: pointer; }
+.bigshell .in .logohorde { -webkit-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2; width: 261px; height: 440px; background: url("./img/horde.png") 0 0 no-repeat; }
+
+@media screen and (max-width: 1494px) { .bigshell .in .logohorde { width: 100%; background: url("./img/horde.png") 50% 50% no-repeat; }
+  .bigshell .in .text-shell2 { padding-right: 0px; }
+  .bigshell .in .text-shell1, .bigshell .in .text-shell2 { padding-top: 12px; }
+  body { background-size: 1920px 100%; }
+  .bigshell .in .text-shell2 p { padding-left: 8px; padding-right: 8px; } }
+@media screen and (max-width: 822px) { .soviet { background: rgba(255, 255, 255, 0.7); box-shadow: 0 0 10px white; backdrop-filter: blur(4px); padding-top: 2.5vw; padding-bottom: 0.5vw; } }
+@media screen and (max-width: 606px) { .bigshell .in .text-shell2 .btnshell2 .btn5 { margin: 10px auto 0; display: block; }
+  .bigshell .in .text-shell2 .btnshell2 .btn4 { margin-right: 0; } }
+@media screen and (max-width: 536px) { .bigshell .in .text-shell1 .btnshell1 .btn2 { margin-left: 5px; }
+  .bigshell .in .text-shell1 .btnshell1 .btn1 { margin-right: 5px; }
+  .bigshell .in .text-shell1 h2, .bigshell .in .text-shell2 h2 { font-size: 44px; line-height: 46px; }
+  .bigshell .in .text-shell1 p, .bigshell .in .text-shell2 p { font-size: 30px; line-height: 36px; }
+  .bigshell .in .text-shell1 p { padding-left: 7px; padding-right: 7px; } }
+@media screen and (max-width: 455px) { .bigshell .in .text-shell1 .btnshell1 .btn2 { margin-left: 0px; display: block; margin: 14px auto 0; }
+  .bigshell .in .text-shell1 .btnshell1 .btn1 { margin-right: 0px; display: block; margin: 5px auto; } }
+@media screen and (max-width: 367px) { .bigshell .in .text-shell2 .btnshell2 .btn3 { margin: 10px auto 0; display: block; }
+  .bigshell .in .text-shell2 .btnshell2 .btn4 { margin: 10px auto 0; display: block; } }
