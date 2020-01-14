@@ -8,14 +8,6 @@ body{
     margin: 0 auto;
     position: relative;
 }
-.no-webp body {
-    background: url('img/fone.png') 50% 0% no-repeat;
-    background-size: cover;
-}
-.webp body {
-    background: url('img/fone.webp') 50% 0% no-repeat;
-    background-size: cover;
-}
 
 .soviet{
     max-width: 1080px;
@@ -184,7 +176,80 @@ body{
     background: url('./img/wowlogs.webp') 0 0 no-repeat;
 }
 
-@media screen and (max-width: 1494px){
+@media screen and (max-width: 5000px) {
+    .no-webp body {
+        background: url('img/background/5k.jpg') 50% 0% no-repeat;
+        background-size: cover;
+    }
+    .webp body {
+        background: url('img/background/5k.webp') 50% 0% no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 3999px) {
+    .no-webp body {
+        background: url('img/background/3k.jpg') 50% 0% no-repeat;
+        background-size: cover;
+    }
+    .webp body {
+        background: url('img/background/3k.webp') 50% 0% no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 2999px) {
+    .no-webp body {
+        background: url('img/background/2k.jpg') 50% 0% no-repeat;
+        background-size: cover;
+    }
+    .webp body {
+        background: url('img/background/2k.webp') 50% 0% no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 2499px) {
+    .no-webp body {
+        background: url('img/background/2.4k.jpg') 50% 0% no-repeat;
+        background-size: cover;
+    }
+    .webp body {
+        background: url('img/background/2.4k.webp') 50% 0% no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 1999px) {
+    .no-webp body {
+        background: url('img/background/1.9k.jpg') 50% 0% no-repeat;
+        background-size: cover;
+    }
+    .webp body {
+        background: url('img/background/1.9k.webp') 50% 0% no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .no-webp body {
+        background: url('img/background/mobile.jpg') 50% 0% no-repeat;
+        background-size: cover;
+    }
+    .webp body {
+        background: url('img/background/mobile.webp') 50% 0% no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 822px){
+    .soviet{
+        background: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 0 10px white;
+        backdrop-filter: blur(4px);
+        padding-top: 2.5vw;
+        padding-bottom: 0.5vw;
+    }
     .bigshell .in .logohorde{
         width: 100%;
     }
@@ -204,17 +269,6 @@ body{
     .bigshell .in .text-shell2 p {
         padding-left: 8px;
         padding-right: 8px;
-    }
-}
-@media screen and (max-width: 983px){
-}
-@media screen and (max-width: 822px){
-    .soviet{
-        background: rgba(255, 255, 255, 0.7);
-        box-shadow: 0 0 10px white;
-        backdrop-filter: blur(4px);
-        padding-top: 2.5vw;
-        padding-bottom: 0.5vw;
     }
 }
 @media screen and (max-width: 606px){
