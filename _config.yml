@@ -1,0 +1,39 @@
+url: https://tirisfal.wtf
+baseurl: ''
+timezone: Europe/Paris
+name: Гильдия Совет Тирифсаля
+description: Гильдия Совет Тирисфаля @ EU Ревущий Фьорд, World of Warcraft
+icon: /assets/img/icon.png
+logo: /assets/img/sovet.png
+verification:
+  yandex: ''
+  google: ''
+
+markdown: kramdown
+sass:
+    style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  startings: all
+  endings: all
+  blanklines: false
+  profile: false
+
+keep_files:
+- CNAME
+- assets
+- favicon.ico
+
+exclude:
+- .git
+- .github
+- .gitignore
+- .gitlab-ci.yml
+- tags
+- vendor
+- Gemfile
+- Gemfile.lock
+- Makefile
+- README.md

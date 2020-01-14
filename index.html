@@ -1,38 +1,53 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
-        <title>Your Page Title</title>
-        <link href="./style.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Forum&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="soviet">
-            <img src="./img/sovet.png" alt="" class="kortez-pidor">
-        </div>
-        <div class="bigshell">
-            <div class="in">
-                <div class="text-shell1">
-                    <h2 class="heading1">Призыв к оружию</h2>
-                    <p class="text1">Совету нужны бравые бойцы на выгодное правое дело - войну с демонами и прочей нечистью, что пытается захватить Азерот. Вступай в ряды отважных войнов света.</p>
-                    <div class="btnshell1">
-                        <a href="#" class="btn1"></a>
-                        <a href="#" class="btn2"></a>
-                    </div>
+---
+layout: default
+---
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>{{ site.name }}</title>
+    <link href="./assets/style.css" rel="stylesheet">
+    <meta property="og:title" content="{{ site.name }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' | replace:'.html','' }}" />
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.logo }}" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="{{ site.name }}" />
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="yandex-verification" content="{{ site.verification.yandex }}" />
+    <meta name="google-site-verification" content="{{ site.verification.google }}" />
+    <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}">
+    <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}{{ site.icon }}" type="image/png">
+    <link rel="icon" href="{{ site.url }}{{ site.baseurl }}{{ site.icon }}" type="image/png">
+    <link rel="apple-touch-icon" type="image/png" href="{{ site.url }}{{ site.baseurl }}{{ site.logo }}" />
+    <script>(function(window){var html=document.documentElement,isSupported=null;function checkSupport(fn){var WebP=new Image;WebP.onload=WebP.onerror=function(){isSupported=WebP.height===2;if(isSupported){if(html.className.indexOf("no-webp")>=0)html.className=html.className.replace(/\bno-webp\b/,"webp");else html.className+=" webp"}};WebP.src="data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA"}checkSupport()})(window);</script>
+</head>
+<body>
+    <div class="soviet">
+        <img src="./assets/img/sovet.png" alt="{{ site.name }}">
+    </div>
+    <div class="bigshell">
+        <div class="in">
+            <div class="text-shell1">
+                <h2 class="heading1">Призыв к оружию</h2>
+                <p class="text1">Совету нужны бравые бойцы на выгодное правое дело - войну с демонами и прочей нечистью, что пытается захватить Азерот. Вступай в ряды отважных войнов света.</p>
+                <div class="btnshell1">
+                    <a href="https://discord.gg/u3dvXXn" class="btn1" target="_blank" rel="nofollow" alt="Discord"></a>
+                    <!--<a href="#" class="btn2" target="_blank" rel="nofollow" alt="Вступить в гильдию"></a>-->
                 </div>
-                <div class="logohorde"></div>
-                <div class="text-shell2">
-                    <h2 class="heading2">Достижения</h2>
-                    <p class="text2">Совет Тирисфаля не сидел сложа руки. О достигнутых целях вам раскажут менестрели, барды и летописи тех лет.</p>
-                    <div class="btnshell2">
-                        <a href="#" class="btn3"></a>
-                        <a href="#" class="btn4"></a>
-                        <a href="#" class="btn5"></a>
-                    </div>
+            </div>
+            <div class="logohorde"></div>
+            <div class="text-shell2">
+                <h2 class="heading2">Достижения</h2>
+                <p class="text2">Совет Тирисфаля не сидел сложа руки. О достигнутых целях вам раскажут менестрели, барды и летописи тех лет.</p>
+                <div class="btnshell2">
+                    <a href="https://raider.io/guilds/eu/howling-fjord/Совет Тирисфаля" class="btn3" target="_blank" rel="nofollow" alt="Raider.IO"></a>
+                    <a href="https://www.wowprogress.com/guild/eu/ревущий-фьорд/Совет+Тирисфаля" class="btn4" target="_blank" rel="nofollow" alt="Wowprogress"></a>
+                    <a href="https://www.warcraftlogs.com/guild/id/253875" class="btn5" target="_blank" rel="nofollow" alt="Warcraft Logs"></a>
                 </div>
             </div>
         </div>
-    </body>
-</html>
-
+    </div>
+    <style>{% include fonts.css %}</style>
+</body>
