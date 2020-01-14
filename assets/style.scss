@@ -10,9 +10,11 @@ body{
 }
 .no-webp body {
     background: url('img/fone.png') 50% 0% no-repeat;
+    background-size: 100% 100%;
 }
 .webp body {
     background: url('img/fone.webp') 50% 0% no-repeat;
+    background-size: 100% 100%;
 }
 
 .soviet{
@@ -198,9 +200,7 @@ body{
     .bigshell .in .text-shell1, .bigshell .in .text-shell2 {
         padding-top: 12px;
     }
-    body{
-        background-size: 1920px 100%;
-    }
+
     .bigshell .in .text-shell2 p {
         padding-left: 8px;
         padding-right: 8px;
