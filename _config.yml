@@ -3,8 +3,8 @@ baseurl: ''
 timezone: Europe/Paris
 name: Гильдия Совет Тирифсаля
 description: Гильдия Совет Тирисфаля @ EU Ревущий Фьорд, World of Warcraft
-icon: /assets/img/icon.png
-logo: /assets/img/sovet.png
+icon: /assets/img/icon
+logo: /assets/img/sovet
 verification:
   yandex: ''
   google: ''

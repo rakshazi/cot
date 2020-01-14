@@ -9,8 +9,10 @@ layout: default
     <meta property="og:title" content="{{ site.name }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' | replace:'.html','' }}" />
-    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.logo }}" />
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.logo }}.png" />
     <meta property="og:image:type" content="image/png" />
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.logo }}.webp" />
+    <meta property="og:image:type" content="image/webp" />
     <meta property="og:locale" content="ru_RU" />
     <meta property="og:site_name" content="{{ site.name }}" />
     <meta property="og:description" content="{{ site.description }}" />
@@ -18,9 +20,11 @@ layout: default
     <meta name="yandex-verification" content="{{ site.verification.yandex }}" />
     <meta name="google-site-verification" content="{{ site.verification.google }}" />
     <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}">
-    <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}{{ site.icon }}" type="image/png">
-    <link rel="icon" href="{{ site.url }}{{ site.baseurl }}{{ site.icon }}" type="image/png">
-    <link rel="apple-touch-icon" type="image/png" href="{{ site.url }}{{ site.baseurl }}{{ site.logo }}" />
+    <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}{{ site.icon }}.png" type="image/png">
+    <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}{{ site.icon }}.webp" type="image/webp">
+    <link rel="icon" href="{{ site.url }}{{ site.baseurl }}{{ site.icon }}.png" type="image/png">
+    <link rel="icon" href="{{ site.url }}{{ site.baseurl }}{{ site.icon }}.webp" type="image/webp">
+    <link rel="apple-touch-icon" type="image/png" href="{{ site.url }}{{ site.baseurl }}{{ site.icon }}.png" />
     <script>(function(window){var html=document.documentElement,isSupported=null;function checkSupport(fn){var WebP=new Image;WebP.onload=WebP.onerror=function(){isSupported=WebP.height===2;if(isSupported){if(html.className.indexOf("no-webp")>=0)html.className=html.className.replace(/\bno-webp\b/,"webp");else html.className+=" webp"}};WebP.src="data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA"}checkSupport()})(window);</script>
 </head>
 <body>
