@@ -198,17 +198,6 @@ body{
     }
 }
 
-@media screen and (max-width: 2999px) {
-    .no-webp body {
-        background: url('img/background/2k.jpg') 50% 0% no-repeat;
-        background-size: cover;
-    }
-    .webp body {
-        background: url('img/background/2k.webp') 50% 0% no-repeat;
-        background-size: cover;
-    }
-}
-
 @media screen and (max-width: 2499px) {
     .no-webp body {
         background: url('img/background/2.4k.jpg') 50% 0% no-repeat;
