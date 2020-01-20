@@ -136,6 +136,32 @@ body{
             height: 440px;
         }
     }
+    #raid-progress{
+        visibility: hidden;
+    }
+    .text-shell-bottom{
+        width: 100%;
+        text-align: center;
+        padding-top: 49px;
+        h2{
+            font-family: Forum;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 72px;
+            line-height: 79px;
+            color: #000;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+        p{
+            font-family: Forum;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 34px;
+            line-height: 38px;
+            color: #000;
+        }
+    }
 }
 
 //Button backgrounds

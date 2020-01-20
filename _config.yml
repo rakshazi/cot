@@ -5,6 +5,12 @@ name: Гильдия Совет Тирифсаля
 description: Гильдия Совет Тирисфаля @ EU Ревущий Фьорд, World of Warcraft
 icon: /assets/img/icon
 logo: /assets/img/sovet
+raider:
+  region: eu
+  realm: howling-fjord
+  name: Совет Тирисфаля
+api:
+  rio: https://raider.io/api/v1/guilds/profile?region=eu&realm=howling-fjord&name=Совет Тирисфаля&fields=raid_progression
 verification:
   yandex: 25d6f61698f4028c
   google: ''
@@ -14,6 +20,8 @@ sass:
     style: compressed
 
 compress_html:
+  ignore:
+    envs: ['local']
   clippings: all
   comments: all
   startings: all
