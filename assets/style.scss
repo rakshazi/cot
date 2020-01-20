@@ -1,6 +1,11 @@
 ---
 # that dashes required for jekyll to properly process scss
 ---
+{% if jekyll.environment == 'development' %}
+{% assign cdn = '' %}
+{% else %}
+{% assign cdn = site.cdn %}
+{% endif %}
 
 body{
     background: rgba(255,255,255,0.7);
@@ -167,93 +172,95 @@ body{
 
 //Button backgrounds
 .no-webp .logohorde {
-    background: url('./img/horde.png') 0 0 no-repeat;
+    // NO CDN here
+    background: url('/assets/img/horde.png') 0 0 no-repeat;
 }
 .webp .logohorde {
-    background: url('./img/horde.webp') 0 0 no-repeat;
+    // NO CDN here
+    background: url('/assets/img/horde.webp') 0 0 no-repeat;
 }
 .no-webp .btn1 {
-    background: url('./img/discord.png') 0 0 no-repeat;
+    background: url('{{ cdn }}/assets/img/discord.png') 0 0 no-repeat;
 }
 .webp .btn1 {
-    background: url('./img/discord.webp') 0 0 no-repeat;
+    background: url('{{ cdn }}/assets/img/discord.webp') 0 0 no-repeat;
 }
 .no-webp .btn2 {
-    background: url('./img/nastupit.png') 0 0 no-repeat;
+    background: url('{{ cdn }}/assets/img/nastupit.png') 0 0 no-repeat;
 }
 .webp .btn2 {
-    background: url('./img/nastupit.webp') 0 0 no-repeat;
+    background: url('{{ cdn }}/assets/img/nastupit.webp') 0 0 no-repeat;
 }
 .no-webp .btn3 {
-    background: url('./img/raider.png') 50% 50% no-repeat;
+    background: url('{{ cdn }}/assets/img/raider.png') 50% 50% no-repeat;
 }
 .webp .btn3 {
-    background: url('./img/raider.webp') 50% 50% no-repeat;
+    background: url('{{ cdn }}/assets/img/raider.webp') 50% 50% no-repeat;
 }
 .no-webp .btn4 {
-    background: url('./img/wowprog.png') 50% 50% no-repeat;
+    background: url('{{ cdn }}/assets/img/wowprog.png') 50% 50% no-repeat;
 }
 .webp .btn4 {
-    background: url('./img/wowprog.webp') 50% 50% no-repeat;
+    background: url('{{ cdn }}/assets/img/wowprog.webp') 50% 50% no-repeat;
 }
 .no-webp .btn5 {
-    background: url('./img/wowlogs.png') 0 0 no-repeat;
+    background: url('{{ cdn }}/assets/img/wowlogs.png') 0 0 no-repeat;
 }
 .webp .btn5 {
-    background: url('./img/wowlogs.webp') 0 0 no-repeat;
+    background: url('{{ cdn }}/assets/img/wowlogs.webp') 0 0 no-repeat;
 }
 
 @media screen and (max-width: 5000px) {
     .no-webp body {
-        background: url('img/background/5k.jpg') 50% 0% no-repeat;
+        background: url('{{ cdn }}/assets/img/background/5k.jpg') 50% 0% no-repeat;
         background-size: cover;
     }
     .webp body {
-        background: url('img/background/5k.webp') 50% 0% no-repeat;
+        background: url('{{ cdn }}/assets/img/background/5k.webp') 50% 0% no-repeat;
         background-size: cover;
     }
 }
 
 @media screen and (max-width: 3999px) {
     .no-webp body {
-        background: url('img/background/3k.jpg') 50% 0% no-repeat;
+        background: url('{{ cdn }}/assets/img/background/3k.jpg') 50% 0% no-repeat;
         background-size: cover;
     }
     .webp body {
-        background: url('img/background/3k.webp') 50% 0% no-repeat;
+        background: url('{{ cdn }}/assets/img/background/3k.webp') 50% 0% no-repeat;
         background-size: cover;
     }
 }
 
 @media screen and (max-width: 2499px) {
     .no-webp body {
-        background: url('img/background/2.4k.jpg') 50% 0% no-repeat;
+        background: url('{{ cdn }}/assets/img/background/2.4k.jpg') 50% 0% no-repeat;
         background-size: cover;
     }
     .webp body {
-        background: url('img/background/2.4k.webp') 50% 0% no-repeat;
+        background: url('{{ cdn }}/assets/img/background/2.4k.webp') 50% 0% no-repeat;
         background-size: cover;
     }
 }
 
 @media screen and (max-width: 1999px) {
     .no-webp body {
-        background: url('img/background/1.9k.jpg') 50% 0% no-repeat;
+        background: url('{{ cdn }}/assets/img/background/1.9k.jpg') 50% 0% no-repeat;
         background-size: cover;
     }
     .webp body {
-        background: url('img/background/1.9k.webp') 50% 0% no-repeat;
+        background: url('{{ cdn }}/assets/img/background/1.9k.webp') 50% 0% no-repeat;
         background-size: cover;
     }
 }
 
 @media screen and (max-width: 1000px) {
     .no-webp body {
-        background: url('img/background/mobile.jpg') 50% 0% no-repeat;
+        background: url('{{ cdn }}/assets/img/background/mobile.jpg') 50% 0% no-repeat;
         background-size: cover;
     }
     .webp body {
-        background: url('img/background/mobile.webp') 50% 0% no-repeat;
+        background: url('{{ cdn }}/assets/img/background/mobile.webp') 50% 0% no-repeat;
         background-size: cover;
     }
 }
@@ -270,10 +277,10 @@ body{
         width: 100%;
     }
     .no-webp .bigshell .in .logohorde{
-        background: url('./img/horde.png') 50% 50% no-repeat;
+        background: url('{{ cdn }}/assets/img/horde.png') 50% 50% no-repeat;
     }
     .webp .bigshell .in .logohorde{
-        background: url('./img/horde.webp') 50% 50% no-repeat;
+        background: url('{{ cdn }}/assets/img/horde.webp') 50% 50% no-repeat;
     }
     .bigshell .in .text-shell2{
         padding-right: 0px;

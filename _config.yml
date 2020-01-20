@@ -1,4 +1,5 @@
 url: https://tirisfal.wtf
+cdn: https://cdn.statically.io/gh/rakshazi/cot/master
 baseurl: ''
 timezone: Europe/Paris
 name: Гильдия Совет Тирифсаля
@@ -21,7 +22,7 @@ sass:
 
 compress_html:
   ignore:
-    envs: ['local']
+    envs: ['development']
   clippings: all
   comments: all
   startings: all
