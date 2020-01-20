@@ -1,0 +1,37 @@
+body{
+    background: rgba(255,255,255,0.7);
+}
+.soviet{
+    max-width: 1080px;
+    width: 100%;
+    height: auto;
+    margin: 145px auto 124px;
+    position: relative;
+}
+
+.in{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    max-width: 1633px;
+    width: 100%;
+    margin:0px auto 0px;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.in .text-shell1,.in .text-shell2{
+    max-width: 607px;
+    width: 100%;
+    text-align: center;
+    padding-top: 49px;
+}
+#raid-progress{
+    visibility: hidden;
+}
+.text-shell-bottom{
+    width: 100%;
+    text-align: center;
+    padding-top: 49px;
+}

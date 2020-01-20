@@ -5,8 +5,8 @@ layout: default
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
     <title>{{ site.name }}</title>
-    <link href="./assets/style.css" rel="stylesheet">
-    <meta property="og:title" content="{{ site.name }}" />
+    <!-- seo shit -->
+    <meta property="og:title" content="{{ site.brand }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' | replace:'.html','' }}" />
     <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.logo }}.png" />
@@ -20,18 +20,22 @@ layout: default
     <meta name="yandex-verification" content="{{ site.verification.yandex }}" />
     <meta name="google-site-verification" content="{{ site.verification.google }}" />
     <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}">
+    <!-- link sharing shit -->
     <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}{{ site.icon }}.png" type="image/png">
     <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}{{ site.icon }}.webp" type="image/webp">
     <link rel="icon" href="{{ site.url }}{{ site.baseurl }}{{ site.icon }}.png" type="image/png">
     <link rel="icon" href="{{ site.url }}{{ site.baseurl }}{{ site.icon }}.webp" type="image/webp">
     <link rel="apple-touch-icon" type="image/png" href="{{ site.url }}{{ site.baseurl }}{{ site.icon }}.png" />
-    <script>(function(window){var html=document.documentElement,isSupported=null;function checkSupport(fn){var WebP=new Image;WebP.onload=WebP.onerror=function(){isSupported=WebP.height===2;if(!isSupported){if(html.className.indexOf("webp")>=0)html.className=html.className.replace(/\bwebp\b/,"no-webp");else html.className+=" webp"}};WebP.src="data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA"}checkSupport()})(window);</script>
+    <!-- webp support check -->
+    <script>{% include webp.js %}</script>
+    <!-- bare-minimal css with elements positions -->
+    <style>{% include minimal.css %}</style>
 </head>
 <body>
     <div class="soviet">
         <picture>
             <source type="image/webp" srcset="./assets/img/sovet.webp">
-            <img src="./assets/img/sovet.png" alt="{{ site.name }}">
+            <img src="./assets/img/sovet.png" alt="{{ site.description }}">
         </picture>
     </div>
     <div class="bigshell">
@@ -64,6 +68,10 @@ layout: default
             </p>
         </div>
     </div>
+    <!-- main css with all styles -->
+    <link href="./assets/style.css" rel="stylesheet">
+    <!-- custom fonts -->
     <style>{% include fonts.css %}</style>
+    <!-- raid progress checker -->
     <script>{% include raid-progress.js %}</script>
 </body>
