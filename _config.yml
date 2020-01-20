@@ -9,8 +9,7 @@ raider:
   region: eu
   realm: howling-fjord
   name: Совет Тирисфаля
-api:
-  rio: https://raider.io/api/v1/guilds/profile?region=eu&realm=howling-fjord&name=Совет Тирисфаля&fields=raid_progression
+
 verification:
   yandex: 25d6f61698f4028c
   google: ''
