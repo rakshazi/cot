@@ -211,17 +211,11 @@ body{
     // NO CDN here
     background: url('/assets/img/horde.webp') 0 0 no-repeat;
 }
-.no-webp .btn1 { /* FF3.6-15 */
-   background: url('/assets/img/buttons/discord.png') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/buttons/discord.png') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/buttons/discord.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
-      }
+.no-webp .btn1 {
+    background: url('/assets/img/buttons/discord.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
+}
 .webp .btn1 {
-    background: url('/assets/img/buttons/discord.webp') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/buttons/discord.webp') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/buttons/discord.webp') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
+    background: url('/assets/img/buttons/discord.webp') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
 }
 .no-webp .btn2 {
     background: url('{{ cdn }}/assets/img/nastupit.png') 0 0 no-repeat;
@@ -230,40 +224,22 @@ body{
     background: url('{{ cdn }}/assets/img/nastupit.webp') 0 0 no-repeat;
 }
 .no-webp .btn3 {
-   background: url('/assets/img/buttons/rio.png') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/buttons/rio.png') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/buttons/rio.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
+    background: url('/assets/img/buttons/rio.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
 }
 .webp .btn3 {
-   background: url('/assets/img/buttons/rio.webp') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/buttons/rio.webp') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/buttons/rio.webp') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
+    background: url('/assets/img/buttons/rio.webp') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
 }
 .no-webp .btn4 {
-   background: url('/assets/img/buttons/wowprogress.png') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/buttons/wowprogress.png') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/buttons/wowprogress.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
+    background: url('/assets/img/buttons/wowprogress.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
 }
 .webp .btn4 {
-   background: url('/assets/img/buttons/wowprogress.webp') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/buttons/wowprogress.webp') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/buttons/wowprogress.webp') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
+    background: url('/assets/img/buttons/wowprogress.webp') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
 }
 .no-webp .btn5 {
-   background: url('/assets/img/buttons/logs.png') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/buttons/logs.png') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/buttons/logs.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
+    background: url('/assets/img/buttons/logs.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
 }
 .webp .btn5 {
-   background: url('/assets/img/buttons/logs.webp') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/buttons/logs.webp') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/buttons/logs.webp') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
+    background: url('/assets/img/buttons/logs.webp') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
 }
 
 @media screen and (max-width: 5000px) {
