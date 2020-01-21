@@ -81,13 +81,17 @@ body{
                 margin: 20px auto;
                 text-align: center;
                 .btn1{
-                    width: 221px;
-                    height: 60px;
+                    width: 50px;
+                    height: 50px;
                     margin-right: 31px;
                     display: inline-block;
                     cursor: pointer;
+                    background-size: 72% 84%;
+                    border-radius: 15px;
+                    padding: 1px 5px;
+                    background-position: 50%;
                 }
-
+                
                 .btn2{
                     width: 221px;
                     height: 60px;
@@ -112,27 +116,40 @@ body{
                 margin: 20px auto;
                 text-align: center;
                 .btn3{
-                    width: 180px;
-                    height: 60px;
-                    margin-right: 14px;
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 31px;
                     display: inline-block;
                     cursor: pointer;
-                    border-radius: 12px;
+                    background-size: 72% 84%;
+                    border-radius: 15px;
+                    padding: 1px 5px;
+                    background-position: 50%;
+                    vertical-align: top;
                 }
                 .btn4{
                     width: 170px;
-                    height: 60px;
-                    margin-right: 13px;
+                    height: 50px;
+                    margin-right: 31px;
                     display: inline-block;
                     cursor: pointer;
-                    border-radius: 12px;
+                    background-size: 85% 66%;
+                    border-radius: 15px;
+                    padding: 1px 5px;
+                    background-position: 50% 59%;
+                    vertical-align: top;
                 }
                 .btn5{
-                    width: 221px;
-                    height: 60px;
-                    margin-left: 1px;
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 31px;
                     display: inline-block;
                     cursor: pointer;
+                    background-size: 72% 84%;
+                    border-radius: 15px;
+                    padding: 1px 5px;
+                    background-position: 50%;
+                    vertical-align: top;
                 }
             }
         }
@@ -169,7 +186,22 @@ body{
         }
     }
 }
-
+.btn1,.btn3,.btn4,.btn5{
+    &:hover{
+        border:1px solid #ccc;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+        padding: 0px 4px!important;
+    }
+    &:focus{
+        border:1px solid #ccc;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+        padding: 0px 4px!important;
+    }
+}
 //Button backgrounds
 .no-webp .logohorde {
     // NO CDN here
@@ -179,11 +211,17 @@ body{
     // NO CDN here
     background: url('/assets/img/horde.webp') 0 0 no-repeat;
 }
-.no-webp .btn1 {
-    background: url('{{ cdn }}/assets/img/discord.png') 0 0 no-repeat;
-}
+.no-webp .btn1 { /* FF3.6-15 */
+   background: url('{{ cdn }}/assets/img/disc.png') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
+   background: url('{{ cdn }}/assets/img/disc.png') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
+   background: url('{{ cdn }}/assets/img/disc.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
+      }   
 .webp .btn1 {
-    background: url('{{ cdn }}/assets/img/discord.webp') 0 0 no-repeat;
+    background: url('{{ cdn }}/assets/img/disc.png') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
+   background: url('{{ cdn }}/assets/img/disc.png') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
+   background: url('{{ cdn }}/assets/img/disc.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
 }
 .no-webp .btn2 {
     background: url('{{ cdn }}/assets/img/nastupit.png') 0 0 no-repeat;
@@ -192,22 +230,40 @@ body{
     background: url('{{ cdn }}/assets/img/nastupit.webp') 0 0 no-repeat;
 }
 .no-webp .btn3 {
-    background: url('{{ cdn }}/assets/img/raider.png') 50% 50% no-repeat;
+   background: url('{{ cdn }}/assets/img/Logo_Black.png') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
+   background: url('{{ cdn }}/assets/img/Logo_Black.png') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
+   background: url('{{ cdn }}/assets/img/Logo_Black.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
 }
 .webp .btn3 {
-    background: url('{{ cdn }}/assets/img/raider.webp') 50% 50% no-repeat;
+   background: url('{{ cdn }}/assets/img/Logo_Black.png') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
+   background: url('{{ cdn }}/assets/img/Logo_Black.png') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
+   background: url('{{ cdn }}/assets/img/Logo_Black.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
 }
 .no-webp .btn4 {
-    background: url('{{ cdn }}/assets/img/wowprog.png') 50% 50% no-repeat;
+   background: url('{{ cdn }}/assets/img/wowprog.png') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
+   background: url('{{ cdn }}/assets/img/wowprog.png') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
+   background: url('{{ cdn }}/assets/img/wowprog.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
 }
 .webp .btn4 {
-    background: url('{{ cdn }}/assets/img/wowprog.webp') 50% 50% no-repeat;
+   background: url('{{ cdn }}/assets/img/wowprog.png') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
+   background: url('{{ cdn }}/assets/img/wowprog.png') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
+   background: url('{{ cdn }}/assets/img/wowprog.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
 }
 .no-webp .btn5 {
-    background: url('{{ cdn }}/assets/img/wowlogs.png') 0 0 no-repeat;
+   background: url('{{ cdn }}/assets/img/warcraftlog-logo.png') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
+   background: url('{{ cdn }}/assets/img/warcraftlog-logo.png') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
+   background: url('{{ cdn }}/assets/img/warcraftlog-logo.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
 }
 .webp .btn5 {
-    background: url('{{ cdn }}/assets/img/wowlogs.webp') 0 0 no-repeat;
+   background: url('{{ cdn }}/assets/img/warcraftlog-logo.png') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
+   background: url('{{ cdn }}/assets/img/warcraftlog-logo.png') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
+   background: url('{{ cdn }}/assets/img/warcraftlog-logo.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
 }
 
 @media screen and (max-width: 5000px) {
@@ -268,7 +324,7 @@ body{
 @media screen and (max-width: 822px){
     .soviet{
         background: rgba(255, 255, 255, 0.7);
-        box-shadow: 0 0 10px white;
+        box-shadow: 0 0 32px white;
         backdrop-filter: blur(4px);
         padding-top: 2.5vw;
         padding-bottom: 0.5vw;
@@ -296,11 +352,9 @@ body{
 }
 @media screen and (max-width: 606px){
     .bigshell .in .text-shell2 .btnshell2 .btn5 {
-        margin: 10px auto 0;
-        display: block;
+
     }
     .bigshell .in .text-shell2 .btnshell2 .btn4 {
-        margin-right: 0;
     }
 }
 @media screen and (max-width: 536px){
@@ -335,8 +389,6 @@ body{
         display: block;
         margin: 5px auto;
     }
-}
-@media screen and (max-width: 367px){
     .bigshell .in .text-shell2 .btnshell2 .btn3 {
         margin: 10px auto 0;
         display: block;
@@ -345,4 +397,11 @@ body{
         margin: 10px auto 0;
         display: block;
     }
+    .bigshell .in .text-shell2 .btnshell2 .btn5{
+        margin: 10px auto 0;
+        display: block;
+    }
+}
+@media screen and (max-width: 367px){
+    
 }
