@@ -277,10 +277,12 @@ body{
         width: 100%;
     }
     .no-webp .bigshell .in .logohorde{
-        background: url('{{ cdn }}/assets/img/horde.png') 50% 50% no-repeat;
+        // NO CDN here
+        background: url('/assets/img/horde.png') 50% 50% no-repeat;
     }
     .webp .bigshell .in .logohorde{
-        background: url('{{ cdn }}/assets/img/horde.webp') 50% 50% no-repeat;
+        // NO CDN here
+        background: url('/assets/img/horde.webp') 50% 50% no-repeat;
     }
     .bigshell .in .text-shell2{
         padding-right: 0px;
