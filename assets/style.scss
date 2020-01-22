@@ -15,6 +15,12 @@ body{
   position: relative;
 }
 
+.center {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 .soviet{
   max-width: 1080px;
   width: 100%;
@@ -75,12 +81,6 @@ body{
       p{
         padding-right: 0px;
       }
-      .btnshell1{
-        max-width: 508px;
-        width: 100%;
-        margin: 20px auto;
-        text-align: center;
-      }
     }
     .text-shell2{
       padding-left: 0px;
@@ -91,29 +91,9 @@ body{
         padding-right: 20px;
         min-height: 152px;
       }
-      .btnshell2{
-        max-width: 607px;
-        width: 100%;
-        margin: 20px auto;
-        text-align: center;
-        .btn4{
-          width: 170px;
-          height: 50px;
-          margin-right: 31px;
-          display: inline-block;
-          cursor: pointer;
-          background-size: 85% 66%;
-          border-radius: 15px;
-          padding: 1px 5px;
-          background-position: 50% 59%;
-          vertical-align: top;
-        }
-      }
     }
     .logohorde{
       order:2;
-      width: 261px;
-      height: 440px;
     }
   }
   #raid-progress{
@@ -143,18 +123,9 @@ body{
     }
   }
 }
-.no-webp .logohorde {
-  // NO CDN here
-  background: url('/assets/img/horde.png') 0 0 no-repeat;
-}
-.webp .logohorde {
-  // NO CDN here
-  background: url('/assets/img/horde.webp') 0 0 no-repeat;
-}
 
 .btn {
   background: linear-gradient(to bottom,  rgb(69,72,77) 7%,rgb(20,20,20) 100%);
-  margin-right: 31px;
   display: inline-block;
   border-radius: 10px;
   padding: 10px;
@@ -164,9 +135,15 @@ body{
 }
 .btn:hover {
   box-shadow: inset 0px 0px 20px 0px rgba(255,255,255,1);
+  height: 48px;
   border:1px solid #ccc;
 }
-.btn4 img { width: 170px; }
+.btn-mr {
+  margin-right: 31px;
+}
+.btn-mr:hover {
+  margin-right: 29px;
+}
 
 @media screen and (max-width: 5000px) {
   .no-webp body {
@@ -234,14 +211,6 @@ body{
   .bigshell .in .logohorde{
     width: 100%;
   }
-  .no-webp .bigshell .in .logohorde{
-    // NO CDN here
-    background: url('/assets/img/horde.png') 50% 50% no-repeat;
-  }
-  .webp .bigshell .in .logohorde{
-    // NO CDN here
-    background: url('/assets/img/horde.webp') 50% 50% no-repeat;
-  }
   .bigshell .in .text-shell2{
     padding-right: 0px;
   }
@@ -255,12 +224,6 @@ body{
   }
 }
 @media screen and (max-width: 536px){
-  .bigshell .in .text-shell1 .btnshell1 .btn2 {
-    margin-left: 5px;
-  }
-  .bigshell .in .text-shell1 .btnshell1 .btn1 {
-    margin-right: 5px;
-  }
   .bigshell .in .text-shell1 h2, .bigshell .in .text-shell2 h2 {
     font-size: 44px;
     line-height: 46px;
@@ -273,32 +236,4 @@ body{
     padding-left: 7px;
     padding-right: 7px;
   }
-}
-
-@media screen and (max-width: 455px){
-  .bigshell .in .text-shell1 .btnshell1 .btn2 {
-    margin-left: 0px;
-    display: block;
-    margin: 14px auto 0;
-  }
-  .bigshell .in .text-shell1 .btnshell1 .btn1 {
-    margin-right: 0px;
-    display: block;
-    margin: 5px auto;
-  }
-  .bigshell .in .text-shell2 .btnshell2 .btn3 {
-    margin: 10px auto 0;
-    display: block;
-  }
-  .bigshell .in .text-shell2 .btnshell2 .btn4 {
-    margin: 10px auto 0;
-    display: block;
-  }
-  .bigshell .in .text-shell2 .btnshell2 .btn5{
-    margin: 10px auto 0;
-    display: block;
-  }
-}
-@media screen and (max-width: 367px){
-
 }
