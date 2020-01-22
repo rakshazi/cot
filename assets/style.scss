@@ -191,13 +191,16 @@ body{
 
 @media screen and (max-width: 1000px) {
   .no-webp body {
-    background: url('{{ cdn }}/assets/img/background/mobile.jpg') 50% 0% no-repeat;
-    background-size: cover;
+    background: url('{{ cdn }}/assets/img/background/mobile.jpg') #09101B 50% 0% no-repeat;
+    background-size: contain;
   }
   .webp body {
-    background: url('{{ cdn }}/assets/img/background/mobile.webp') 50% 0% no-repeat;
-    background-size: cover;
+    background: url('{{ cdn }}/assets/img/background/mobile.webp') #09101B 50% 0% no-repeat;
+    background-size: contain;
   }
+  .bigshell {
+    margin:0 auto;
+}
 }
 
 @media screen and (max-width: 822px){
