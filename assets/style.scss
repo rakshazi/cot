@@ -135,14 +135,9 @@ body{
 }
 .btn:hover {
   box-shadow: inset 0px 0px 20px 0px rgba(255,255,255,1);
-  height: 48px;
-  border:1px solid #ccc;
 }
 .btn-mr {
   margin-right: 31px;
-}
-.btn-mr:hover {
-  margin-right: 29px;
 }
 
 @media screen and (max-width: 5000px) {
