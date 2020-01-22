@@ -203,6 +203,15 @@ div.btn-group {
     }
 }
 
+@media screen and (max-width: 1500px) {
+    #btn-space {
+        display: none;
+    }
+    .btn-ml {
+        margin-left: 10px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .no-webp body {
         background: url('{{ cdn }}/assets/img/background/mobile.jpg') #09101B 50% 0% no-repeat;
