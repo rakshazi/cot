@@ -16,8 +16,6 @@ layout: default
     <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' | replace:'.html','' }}" />
     <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.logo }}.png" />
     <meta property="og:image:type" content="image/png" />
-    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.logo }}.webp" />
-    <meta property="og:image:type" content="image/webp" />
     <meta property="og:locale" content="ru_RU" />
     <meta property="og:site_name" content="{{ site.name }}" />
     <meta property="og:description" content="{{ site.description }}" />
@@ -27,21 +25,14 @@ layout: default
     <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}">
     <!-- link sharing shit -->
     <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}{{ site.icon }}.png" type="image/png">
-    <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}{{ site.icon }}.webp" type="image/webp">
     <link rel="icon" href="{{ site.url }}{{ site.baseurl }}{{ site.icon }}.png" type="image/png">
-    <link rel="icon" href="{{ site.url }}{{ site.baseurl }}{{ site.icon }}.webp" type="image/webp">
     <link rel="apple-touch-icon" type="image/png" href="{{ site.url }}{{ site.baseurl }}{{ site.icon }}.png" />
-    <!-- webp support check -->
-    <script>{% include webp.js %}</script>
     <!-- bare-minimal css with elements positions -->
     <style>{% include minimal.css %}</style>
 </head>
 <body>
     <div class="soviet">
-        <picture>
-            <!--<source type="image/webp" srcset="/assets/img/sovet.webp">-->
             <img src="{{ cdn }}/assets/img/sovet.png" alt="{{ site.description }}">
-        </picture>
     </div>
     <div class="bigshell">
         <div class="in">
@@ -51,10 +42,7 @@ layout: default
                 Вступай в ряды отважных воинов света.</p>
             </div>
             <div class="logohorde">
-                <picture>
-                    <!--<source type="image/webp" srcset="/assets/img/horde.webp">-->
                     <img src="{{ cdn }}/assets/img/horde.png" class="center">
-                </picture>
             </div>
             <div class="text-shell2">
                 <h2 class="heading2">Достижения</h2>
@@ -63,29 +51,17 @@ layout: default
         </div>
         <div class="center btn-group">
             <a href="{{ site.url }}/discord" class="btn" target="_blank" rel="nofollow" alt="Discord">
-                <picture>
-                    <!--<source type="image/webp" srcset="/assets/img/buttons/discord.webp">-->
                     <img src="{{ cdn }}/assets/img/buttons/discord.png" alt="Discord">
-                </picture>
             </a>
             <a href="{{ site.url }}/rio" class="btn btn-ml" target="_blank" rel="nofollow" alt="Raider.IO">
-                <picture>
-                    <!--<source type="image/webp" srcset="/assets/img/buttons/rio.webp">-->
                     <img src="{{ cdn }}/assets/img/buttons/rio.png" alt="Raider.IO">
-                </picture>
             </a>
             <span id="btn-space" class="btn-ml"></span>
             <a href="{{ site.url }}/wowprogress" class="btn btn-ml" target="_blank" rel="nofollow" alt="Wowprogress">
-                <picture>
-                    <!--<source type="image/webp" srcset="/assets/img/buttons/wowprogress.webp">-->
                     <img src="{{ cdn }}/assets/img/buttons/wowprogress.png" alt="Wowprogress">
-                </picture>
             </a>
             <a href="{{ site.url }}/logs" class="btn btn-ml" target="_blank" rel="nofollow" alt="Warcraft Logs">
-                <picture>
-                    <!--<source type="image/webp" srcset="/assets/img/buttons/logs.webp">-->
                     <img src="{{ cdn }}/assets/img/buttons/logs.png" alt="Warcraft Logs">
-                </picture>
             </a>
         </div>
         <div id="raid-progress" class="text-shell-bottom"><p>
