@@ -8,402 +8,232 @@
 {% endif %}
 
 body{
-    background: rgba(255,255,255,0.7);
-    max-width: 1920px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
+  background: rgba(255,255,255,0.7);
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.center {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .soviet{
-    max-width: 1080px;
+  max-width: 1080px;
+  width: 100%;
+  height: auto;
+  margin: 145px auto 124px;
+  position: relative;
+  &>picture>img{
     width: 100%;
     height: auto;
-    margin: 145px auto 124px;
-    position: relative;
-    &>picture>img{
-        width: 100%;
-        height: auto;
-    }
+  }
 }
 .bigshell{
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 1);
+  margin:0 auto 425px;
+  .in{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    max-width: 1633px;
+    width: 100%;
+    margin:0px auto 0px;
     position: relative;
-    z-index: 1;
-    box-shadow: 0 0 25px rgba(255, 255, 255, 1);
-    margin:0 auto 425px;
-    .in{
-        padding-top: 48px;
-        padding-bottom: 48px;
-        max-width: 1633px;
-        width: 100%;
-        margin:0px auto 0px;
-        position: relative;
-        z-index: 5;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        .text-shell1,.text-shell2{
-            max-width: 607px;
-            width: 100%;
-            text-align: center;
-            padding-top: 49px;
-            h2{
-                font-family: Forum;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 72px;
-                line-height: 79px;
-                color: #000;
-                margin-top: 0;
-                margin-bottom: 40px;
-            }
-            p{
-                font-family: Forum;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 34px;
-                line-height: 38px;
-                color: #000;
-            }
-        }
-        .text-shell1{
-            padding-left: 0px;
-            padding-right: 0px;
-            order:1;
-            p{
-                padding-right: 0px;
-            }
-            .btnshell1{
-                max-width: 508px;
-                width: 100%;
-                margin: 20px auto;
-                text-align: center;
-                .btn1{
-                    width: 50px;
-                    height: 50px;
-                    margin-right: 31px;
-                    display: inline-block;
-                    cursor: pointer;
-                    background-size: 72% 84%;
-                    border-radius: 15px;
-                    padding: 1px 5px;
-                    background-position: 50%;
-                }
-
-                .btn2{
-                    width: 221px;
-                    height: 60px;
-                    margin-left: 31px;
-                    display: inline-block;
-                    cursor: pointer;
-                }
-            }
-        }
-        .text-shell2{
-            padding-left: 0px;
-            padding-right: 20px;
-            order:3;
-            p{
-                padding-left: 0px;
-                padding-right: 20px;
-                min-height: 152px;
-            }
-            .btnshell2{
-                max-width: 607px;
-                width: 100%;
-                margin: 20px auto;
-                text-align: center;
-                .btn3{
-                    width: 50px;
-                    height: 50px;
-                    margin-right: 31px;
-                    display: inline-block;
-                    cursor: pointer;
-                    background-size: 72% 84%;
-                    border-radius: 15px;
-                    padding: 1px 5px;
-                    background-position: 50%;
-                    vertical-align: top;
-                }
-                .btn4{
-                    width: 170px;
-                    height: 50px;
-                    margin-right: 31px;
-                    display: inline-block;
-                    cursor: pointer;
-                    background-size: 85% 66%;
-                    border-radius: 15px;
-                    padding: 1px 5px;
-                    background-position: 50% 59%;
-                    vertical-align: top;
-                }
-                .btn5{
-                    width: 50px;
-                    height: 50px;
-                    margin-right: 31px;
-                    display: inline-block;
-                    cursor: pointer;
-                    background-size: 72% 84%;
-                    border-radius: 15px;
-                    padding: 1px 5px;
-                    background-position: 50%;
-                    vertical-align: top;
-                }
-            }
-        }
-        .logohorde{
-            order:2;
-            width: 261px;
-            height: 440px;
-        }
-    }
-    #raid-progress{
-        visibility: hidden;
-    }
-    .text-shell-bottom{
-        width: 100%;
-        text-align: center;
-        padding-top: 49px;
-        h2{
-            font-family: Forum;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 72px;
-            line-height: 79px;
-            color: #000;
-            margin-top: 0;
-            margin-bottom: 40px;
-        }
-        p{
-            font-family: Forum;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 34px;
-            line-height: 38px;
-            color: #000;
-        }
-    }
-}
-.btn1,.btn3,.btn4,.btn5{
-    &:hover{
-        border:1px solid #ccc;
-        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
-        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
-        box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
-        padding: 0px 4px!important;
-    }
-    &:focus{
-        border:1px solid #ccc;
-        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
-        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
-        box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
-        padding: 0px 4px!important;
-    }
-}
-//Button backgrounds
-.no-webp .logohorde {
-    // NO CDN here
-    background: url('/assets/img/horde.png') 0 0 no-repeat;
-}
-.webp .logohorde {
-    // NO CDN here
-    background: url('/assets/img/horde.webp') 0 0 no-repeat;
-}
-.no-webp .btn1 { /* FF3.6-15 */
-   background: url('/assets/img/disc.png') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/disc.png') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/disc.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
+    z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .text-shell1,.text-shell2{
+      max-width: 607px;
+      width: 100%;
+      text-align: center;
+      padding-top: 49px;
+      h2{
+        font-family: Forum;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 72px;
+        line-height: 79px;
+        color: #000;
+        margin-top: 0;
+        margin-bottom: 40px;
       }
-.webp .btn1 {
-    background: url('/assets/img/disc.webp') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/disc.webp') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/disc.webp') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
+      p{
+        font-family: Forum;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 34px;
+        line-height: 38px;
+        color: #000;
+      }
+    }
+    .text-shell1{
+      padding-left: 0px;
+      padding-right: 0px;
+      order:1;
+      p{
+        padding-right: 0px;
+      }
+    }
+    .text-shell2{
+      padding-left: 0px;
+      padding-right: 20px;
+      order:3;
+      p{
+        padding-left: 0px;
+        padding-right: 20px;
+        min-height: 152px;
+      }
+    }
+    .logohorde{
+      order:2;
+    }
+  }
+  #raid-progress{
+    visibility: hidden;
+  }
+  .text-shell-bottom{
+    width: 100%;
+    text-align: center;
+    padding-top: 49px;
+    h2{
+      font-family: Forum;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 72px;
+      line-height: 79px;
+      color: #000;
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+    p{
+      font-family: Forum;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 34px;
+      line-height: 38px;
+      color: #000;
+    }
+  }
 }
-.no-webp .btn2 {
-    background: url('{{ cdn }}/assets/img/nastupit.png') 0 0 no-repeat;
+
+.btn {
+  background: linear-gradient(to bottom,  rgb(69,72,77) 7%,rgb(20,20,20) 100%);
+  display: inline-block;
+  border-radius: 10px;
+  padding: 10px;
+  vertical-align: top;
+  height: 50px;
+  img { width: 50px; }
 }
-.webp .btn2 {
-    background: url('{{ cdn }}/assets/img/nastupit.webp') 0 0 no-repeat;
+.btn:hover {
+  box-shadow: inset 0px 0px 20px 0px rgba(255,255,255,1);
+  height: 48px;
+  border:1px solid #ccc;
 }
-.no-webp .btn3 {
-   background: url('/assets/img/Logo_Black.png') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/Logo_Black.png') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/Logo_Black.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
+.btn-mr {
+  margin-right: 31px;
 }
-.webp .btn3 {
-   background: url('/assets/img/Logo_Black.webp') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/Logo_Black.webp') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/Logo_Black.webp') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
-}
-.no-webp .btn4 {
-   background: url('/assets/img/wowprog.png') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/wowprog.png') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/wowprog.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
-}
-.webp .btn4 {
-   background: url('/assets/img/wowprog.webp') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/wowprog.webp') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/wowprog.webp') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
-}
-.no-webp .btn5 {
-   background: url('/assets/img/warcraftlog-logo.png') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/warcraftlog-logo.png') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/warcraftlog-logo.png') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
-}
-.webp .btn5 {
-   background: url('/assets/img/warcraftlog-logo.webp') 0 0 no-repeat, -webkit-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/warcraftlog-logo.webp') 0 0 no-repeat, -o-linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%);
-   background: url('/assets/img/warcraftlog-logo.webp') 0 0 no-repeat, linear-gradient(rgba(76,76,76,1) 0%, rgba(44,44,44,1) 2%, rgba(68,68,68,1) 75%, rgba(33,33,33,1) 97%, rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
+.btn-mr:hover {
+  margin-right: 29px;
 }
 
 @media screen and (max-width: 5000px) {
-    .no-webp body {
-        background: url('{{ cdn }}/assets/img/background/5k.jpg') 50% 0% no-repeat;
-        background-size: cover;
-    }
-    .webp body {
-        background: url('{{ cdn }}/assets/img/background/5k.webp') 50% 0% no-repeat;
-        background-size: cover;
-    }
+  .no-webp body {
+    background: url('{{ cdn }}/assets/img/background/5k.jpg') 50% 0% no-repeat;
+    background-size: cover;
+  }
+  .webp body {
+    background: url('{{ cdn }}/assets/img/background/5k.webp') 50% 0% no-repeat;
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 3999px) {
-    .no-webp body {
-        background: url('{{ cdn }}/assets/img/background/3k.jpg') 50% 0% no-repeat;
-        background-size: cover;
-    }
-    .webp body {
-        background: url('{{ cdn }}/assets/img/background/3k.webp') 50% 0% no-repeat;
-        background-size: cover;
-    }
+  .no-webp body {
+    background: url('{{ cdn }}/assets/img/background/3k.jpg') 50% 0% no-repeat;
+    background-size: cover;
+  }
+  .webp body {
+    background: url('{{ cdn }}/assets/img/background/3k.webp') 50% 0% no-repeat;
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 2499px) {
-    .no-webp body {
-        background: url('{{ cdn }}/assets/img/background/2.4k.jpg') 50% 0% no-repeat;
-        background-size: cover;
-    }
-    .webp body {
-        background: url('{{ cdn }}/assets/img/background/2.4k.webp') 50% 0% no-repeat;
-        background-size: cover;
-    }
+  .no-webp body {
+    background: url('{{ cdn }}/assets/img/background/2.4k.jpg') 50% 0% no-repeat;
+    background-size: cover;
+  }
+  .webp body {
+    background: url('{{ cdn }}/assets/img/background/2.4k.webp') 50% 0% no-repeat;
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 1999px) {
-    .no-webp body {
-        background: url('{{ cdn }}/assets/img/background/1.9k.jpg') 50% 0% no-repeat;
-        background-size: cover;
-    }
-    .webp body {
-        background: url('{{ cdn }}/assets/img/background/1.9k.webp') 50% 0% no-repeat;
-        background-size: cover;
-    }
+  .no-webp body {
+    background: url('{{ cdn }}/assets/img/background/1.9k.jpg') 50% 0% no-repeat;
+    background-size: cover;
+  }
+  .webp body {
+    background: url('{{ cdn }}/assets/img/background/1.9k.webp') 50% 0% no-repeat;
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    .no-webp body {
-        background: url('{{ cdn }}/assets/img/background/mobile.jpg') 50% 0% no-repeat;
-        background-size: cover;
-    }
-    .webp body {
-        background: url('{{ cdn }}/assets/img/background/mobile.webp') 50% 0% no-repeat;
-        background-size: cover;
-    }
+  .no-webp body {
+    background: url('{{ cdn }}/assets/img/background/mobile.jpg') 50% 0% no-repeat;
+    background-size: cover;
+  }
+  .webp body {
+    background: url('{{ cdn }}/assets/img/background/mobile.webp') 50% 0% no-repeat;
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 822px){
-    .soviet{
-        background: rgba(255, 255, 255, 0.7);
-        box-shadow: 0 0 32px white;
-        backdrop-filter: blur(4px);
-        padding-top: 2.5vw;
-        padding-bottom: 0.5vw;
-    }
-    .bigshell .in .logohorde{
-        width: 100%;
-    }
-    .no-webp .bigshell .in .logohorde{
-        // NO CDN here
-        background: url('/assets/img/horde.png') 50% 50% no-repeat;
-    }
-    .webp .bigshell .in .logohorde{
-        // NO CDN here
-        background: url('/assets/img/horde.webp') 50% 50% no-repeat;
-    }
-    .bigshell .in .text-shell2{
-        padding-right: 0px;
-    }
-    .bigshell .in .text-shell1, .bigshell .in .text-shell2 {
-        padding-top: 12px;
-    }
+  .soviet{
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 32px white;
+    backdrop-filter: blur(4px);
+    padding-top: 2.5vw;
+    padding-bottom: 0.5vw;
+  }
+  .bigshell .in .logohorde{
+    width: 100%;
+  }
+  .bigshell .in .text-shell2{
+    padding-right: 0px;
+  }
+  .bigshell .in .text-shell1, .bigshell .in .text-shell2 {
+    padding-top: 12px;
+  }
 
-    .bigshell .in .text-shell2 p {
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-}
-@media screen and (max-width: 606px){
-    .bigshell .in .text-shell2 .btnshell2 .btn5 {
-
-    }
-    .bigshell .in .text-shell2 .btnshell2 .btn4 {
-    }
+  .bigshell .in .text-shell2 p {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }
 @media screen and (max-width: 536px){
-    .bigshell .in .text-shell1 .btnshell1 .btn2 {
-        margin-left: 5px;
-    }
-    .bigshell .in .text-shell1 .btnshell1 .btn1 {
-        margin-right: 5px;
-    }
-    .bigshell .in .text-shell1 h2, .bigshell .in .text-shell2 h2 {
-        font-size: 44px;
-        line-height: 46px;
-    }
-    .bigshell .in .text-shell1 p, .bigshell .in .text-shell2 p {
-        font-size: 30px;
-        line-height: 36px;
-    }
-    .bigshell .in .text-shell1 p{
-        padding-left: 7px;
-        padding-right: 7px;
-    }
-}
-
-@media screen and (max-width: 455px){
-    .bigshell .in .text-shell1 .btnshell1 .btn2 {
-        margin-left: 0px;
-        display: block;
-        margin: 14px auto 0;
-    }
-    .bigshell .in .text-shell1 .btnshell1 .btn1 {
-        margin-right: 0px;
-        display: block;
-        margin: 5px auto;
-    }
-    .bigshell .in .text-shell2 .btnshell2 .btn3 {
-        margin: 10px auto 0;
-        display: block;
-    }
-    .bigshell .in .text-shell2 .btnshell2 .btn4 {
-        margin: 10px auto 0;
-        display: block;
-    }
-    .bigshell .in .text-shell2 .btnshell2 .btn5{
-        margin: 10px auto 0;
-        display: block;
-    }
-}
-@media screen and (max-width: 367px){
-
+  .bigshell .in .text-shell1 h2, .bigshell .in .text-shell2 h2 {
+    font-size: 44px;
+    line-height: 46px;
+  }
+  .bigshell .in .text-shell1 p, .bigshell .in .text-shell2 p {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .bigshell .in .text-shell1 p{
+    padding-left: 7px;
+    padding-right: 7px;
+  }
 }
