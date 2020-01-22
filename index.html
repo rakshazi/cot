@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+{% if jekyll.environment == 'development' %}
+{% assign cdn = '' %}
+{% else %}
+{% assign cdn = site.cdn %}
+{% endif %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
@@ -34,8 +39,8 @@ layout: default
 <body>
     <div class="soviet">
         <picture>
-            <source type="image/webp" srcset="/assets/img/sovet.webp">
-            <img src="/assets/img/sovet.png" alt="{{ site.description }}">
+            <!--<source type="image/webp" srcset="/assets/img/sovet.webp">-->
+            <img src="{{ cdn }}/assets/img/sovet.png" alt="{{ site.description }}">
         </picture>
     </div>
     <div class="bigshell">
@@ -47,8 +52,8 @@ layout: default
             </div>
             <div class="logohorde">
                 <picture>
-                    <source type="image/webp" srcset="/assets/img/horde.webp">
-                    <img src="/assets/img/horde.png" class="center">
+                    <!--<source type="image/webp" srcset="/assets/img/horde.webp">-->
+                    <img src="{{ cdn }}/assets/img/horde.png" class="center">
                 </picture>
             </div>
             <div class="text-shell2">
@@ -59,27 +64,27 @@ layout: default
         <div class="center btn-group">
             <a href="{{ site.url }}/discord" class="btn" target="_blank" rel="nofollow" alt="Discord">
                 <picture>
-                    <source type="image/webp" srcset="/assets/img/buttons/discord.webp">
-                    <img src="/assets/img/buttons/discord.png" alt="Discord">
+                    <!--<source type="image/webp" srcset="/assets/img/buttons/discord.webp">-->
+                    <img src="{{ cdn }}/assets/img/buttons/discord.png" alt="Discord">
                 </picture>
             </a>
             <a href="{{ site.url }}/rio" class="btn btn-ml" target="_blank" rel="nofollow" alt="Raider.IO">
                 <picture>
-                    <source type="image/webp" srcset="/assets/img/buttons/rio.webp">
-                    <img src="/assets/img/buttons/rio.png" alt="Raider.IO">
+                    <!--<source type="image/webp" srcset="/assets/img/buttons/rio.webp">-->
+                    <img src="{{ cdn }}/assets/img/buttons/rio.png" alt="Raider.IO">
                 </picture>
             </a>
             <span id="btn-space" class="btn-ml"></span>
             <a href="{{ site.url }}/wowprogress" class="btn btn-ml" target="_blank" rel="nofollow" alt="Wowprogress">
                 <picture>
-                    <source type="image/webp" srcset="/assets/img/buttons/wowprogress.webp">
-                    <img src="/assets/img/buttons/wowprogress.png" alt="Wowprogress">
+                    <!--<source type="image/webp" srcset="/assets/img/buttons/wowprogress.webp">-->
+                    <img src="{{ cdn }}/assets/img/buttons/wowprogress.png" alt="Wowprogress">
                 </picture>
             </a>
             <a href="{{ site.url }}/logs" class="btn btn-ml" target="_blank" rel="nofollow" alt="Warcraft Logs">
                 <picture>
-                    <source type="image/webp" srcset="/assets/img/buttons/logs.webp">
-                    <img src="/assets/img/buttons/logs.png" alt="Warcraft Logs">
+                    <!--<source type="image/webp" srcset="/assets/img/buttons/logs.webp">-->
+                    <img src="{{ cdn }}/assets/img/buttons/logs.png" alt="Warcraft Logs">
                 </picture>
             </a>
         </div>
