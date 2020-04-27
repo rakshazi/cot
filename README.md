@@ -21,3 +21,7 @@ Warcraft Logs guild page
 ### [tirisfal.wtf/wowprogress](https://tirisfal.wtf/wowprogress)
 
 Wowprogress guild page
+
+### [tirisfal.wtf/apply](https://tirisfal.wtf/apply)
+
+Apply to guild
